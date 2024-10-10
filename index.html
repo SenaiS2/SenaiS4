@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cartao {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .resposta {
+            display: none;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <div class="cartao">
+                <h3>Programação</h3>
+                <div class="pergunta">
+                    <p>Não tenho fim e dou fim a tudo que começo quem eu sou?</p>
+                </div>
+                <div class="resposta">
+                    <p>A morte</p>
+                </div>
+                <button onclick="mostrarResposta()">Mostrar Resposta</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function mostrarResposta() {
+            document.querySelector('.resposta').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
